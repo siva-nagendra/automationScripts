@@ -110,7 +110,7 @@ def main():
     importType = args["importType"]
     dirName = importType
     filePath = getFilePath(dirName, assetPath)
-    destination_path = filePath.replace("/jobs/library/texture/textureLibrary/Artists/siva-n/unreal/CodeProjTest/Content", "/Game")
+    destination_path = filePath.replace("/D:/unreal/CodeProjTest/Content", "/Game")
     unrealImport = UnrealImportTask()
     if importType == "Model":
         unrealImport.importStaticMesh(filePath, destination_path)
